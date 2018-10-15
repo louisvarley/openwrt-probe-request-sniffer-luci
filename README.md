@@ -29,3 +29,5 @@ then /etc/init.d/sniff start
 on Luci, you should see under services/probe sniffer a list of Mac Addresses and vendors the script found. and when they were last seen, 
 
 ![Screenshot](https://raw.githubusercontent.com/SEAL-team-ricks/openwrt-probe-request-sniffer-luci/master/screenshot.png)
+
+Did you want this actually put into a usable ipkg? i tend to just store code on github, feel free to fork if this project is useful or reuse code or just shout at me that you wanted an ipkg
