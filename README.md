@@ -28,3 +28,4 @@ then /etc/init.d/sniff start
 
 on Luci, you should see under services/probe sniffer a list of Mac Addresses and vendors the script found. and when they were last seen, 
 
+![Screenshot](https://raw.githubusercontent.com/SEAL-team-ricks/openwrt-probe-request-sniffer-luci/master/screenshot.png)
