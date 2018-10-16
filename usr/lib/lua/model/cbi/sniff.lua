@@ -43,9 +43,10 @@ for file in fs.dir[[/usr/sniff]] do
 			file = file
 		}
 		
-		table.sort(sniffs, function (left, right)
-			return left[2] > right[2]
-		end)
+                table.sort(sniffs, function (left, right)
+                        return left['lastseen_raw'] < right['lastseen_raw']
+                end)
+
 		
 end
 	
