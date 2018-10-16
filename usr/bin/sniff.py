@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # import all the needed libraries
 import sys
-import os.path
+import os
 import logging
 
 import urllib
@@ -45,6 +45,10 @@ def phandle(p):
 	f = open(macFile,"w")
 
 	now = datetime.datetime.now()
+	
+        for f in os.listdir(/usr/sniff):
+                if os.stat(os.path.join(path,f)).st_mtime < now - 7 * 86400:
+	
 
 	if(os.path.exists(macFile) or os.path.getsize(macFile) > 0):
 		f.write('[{"mac":"'+mac_address+'","company":"'+company+'","lastseen":"'+now.isoformat()+'","nickname":""}]')
