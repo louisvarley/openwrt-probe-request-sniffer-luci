@@ -5,6 +5,7 @@
 START=10
 STOP=15
 PIDFILE="/var/run/sniff.pid"
+EXTRA_COMMANDS="status"
 
 start() {
         if [ -f $PIDFILE  ]; then
@@ -24,6 +25,13 @@ stop() {
         else
                 echo "Not Running"
         fi
+
+}
+
+status() {
+
+         read PID <$PIDFILE
+         ps | grep $PIDFILE
 
 }
 
