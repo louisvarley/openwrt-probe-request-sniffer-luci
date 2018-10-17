@@ -45,11 +45,6 @@ def phandle(p):
 	f = open(macFile,"w")
 
 	now = datetime.datetime.now()
-	
-        for f in os.listdir("/usr/sniff"):
-                if os.stat(os.path.join("/usr/sniff",f)).st_mtime < now - 7 * 86400:
-			os.remove(os.path.join("/usr/sniff", f))
-	
 
 	if(os.path.exists(macFile) or os.path.getsize(macFile) > 0):
 		f.write('[{"mac":"'+mac_address+'","company":"'+company+'","lastseen":"'+now.isoformat()+'","nickname":""}]')
