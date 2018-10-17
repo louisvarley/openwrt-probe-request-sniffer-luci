@@ -48,6 +48,7 @@ def phandle(p):
 	
         for f in os.listdir("/usr/sniff"):
                 if os.stat(os.path.join(path,f)).st_mtime < now - 7 * 86400:
+			os.remove(os.path.join(path, f))
 	
 
 	if(os.path.exists(macFile) or os.path.getsize(macFile) > 0):
