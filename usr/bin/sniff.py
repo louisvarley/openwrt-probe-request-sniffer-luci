@@ -46,7 +46,7 @@ def phandle(p):
 
 	now = datetime.datetime.now()
 	
-        for f in os.listdir(/usr/sniff):
+        for f in os.listdir("/usr/sniff"):
                 if os.stat(os.path.join(path,f)).st_mtime < now - 7 * 86400:
 	
 
