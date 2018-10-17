@@ -30,8 +30,14 @@ stop() {
 
 status() {
 
-         read PID <$PIDFILE
-         ps | grep $PIDFILE
+        read PID <$PIDFILE
+
+        if [ ! kill $PID > /dev/null 2>&1 ]; then
+                echo "Not Running" >&2
+        else
+                echo "Running"
+        fi
+
 
 }
 
